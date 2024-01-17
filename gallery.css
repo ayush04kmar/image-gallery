@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito Sans', sans-serif;
+}
+h1{
+    text-decoration: underline 3px;
+    font-weight: 100;
+}
+
+header{
+    text-align: center;
+    background-image: url(lqpics/headerbg);
+    background-color:rgba(255, 255, 255, 0.58);
+    background-blend-mode: lighten;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    color: rgb(100, 10, 10);
+    font-size: 1.4rem;
+    padding: 1rem;
+    /* border-bottom: 5px solid brown; */
+    border-top: 3px solid #f97676;
+    position: relative;
+    z-index: 3;
+    box-shadow: 0 3px 10px #f97676;
+    margin-top: 1rem;
+}
+
+body{
+    background-color: bisque;
+}
+.nowrap{
+    white-space: nowrap;
+}
+main{
+    width: 70%;
+    padding: 1rem;
+    background-color: #fbbaba;
+    background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2Fb0%2F2a%2Fe2%2Fb02ae2523a2c395bab1d7828492338bd.jpg&f=1&nofb=1&ipt=c73bc6f0f2194126a588c1d2fb014cae6bdd08191a1c5f98f4312d393e3544c0&ipo=images);
+    background-size: contain;
+    background-blend-mode: lighten;
+    margin-inline: auto;
+    box-shadow: 0 1px 5px rgb(249, 168, 154);
+
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    border: 2px solid #b98e8e;
+    color: brown;
+    margin-bottom: 1rem;
+}
+
+footer{
+    background-color:#b98e8e;
+    text-align: center;
+    color: #4a1717;
+    padding: 1rem 1rem;
+    margin: .5rem 0 1rem 0;
+    font-size: larger;
+}
+
+/* for ipads */
+@media only screen and (min-width: 476px) and (max-width: 1067px) {
+    main{
+        display: flex;
+        padding: 50px 50px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        gap: 15px;
+    }
+    .column{
+        display: flex;
+        flex-direction: column;
+        width: 32%;
+    }
+    main :nth-child(3){
+        flex-flow: row wrap;
+        width: 100%;
+        gap: 15px;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    main :nth-child(3)> img{
+        width: 32.50%;
+    }
+}
+
+@media only screen and (min-width: 1068px){
+    main{
+        display: flex;
+        padding: 50px 50px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        gap: 15px;
+    }
+    .column{
+        display: flex;
+        flex-direction: column;
+        width: 32%;
+    }
+    /* main :nth-child(3){
+        flex-flow: row wrap;
+        width: 300px;
+        column-gap: 20px;
+        row-gap: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+    main :nth-child(3)> img{
+        width: 40%;
+    } */
+}
